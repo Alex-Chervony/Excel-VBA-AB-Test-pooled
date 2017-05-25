@@ -2,8 +2,8 @@ VBA code and formulae allowing statistical analysis in MS Excel without add-ons.
 
 # AB-Test
 1. If test conditions\* are met, do a pooled Z test comparing 2 proportions.
-1. If test conditions are met, return the proportion difference.
-1. If test conditions are not met do not return anything.
+1. If test conditions are met and significant difference is found, return the proportion difference.
+1. If test conditions are not met, or there is no significant difference, do not return anything.
 
 
 ### Usage:
