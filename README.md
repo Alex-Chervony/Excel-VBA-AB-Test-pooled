@@ -1,4 +1,4 @@
-VBA code and formulae allowing statistical analysis without add-ons.
+VBA code and formulae allowing statistical analysis in MS Excel without add-ons.
 
 # AB-Test
 1. If test conditions\* are met, do a pooled Z test comparing 2 proportions.
