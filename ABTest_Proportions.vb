@@ -1,8 +1,10 @@
-Function ABTest_Proportions(n1, y1, n2, y2 As Long, Optional confidence As Double = 95) As Double
+Function ABTest_Proportions(n1, y1, n2, y2 As Long, Optional confidence As Double = 95) As Variant
     ' This is a two tailed non pooled proportion test.
     
     Dim p1, p2, CIUpper, CILower As Double
     Dim significance As String
+    
+    ABTest_Proportions = ""
     
     'Proportions
     p1 = y1 / n1
@@ -19,7 +21,6 @@ Function ABTest_Proportions(n1, y1, n2, y2 As Long, Optional confidence As Doubl
         pz = 1.644854
     Else
         'Proportion difference can be between -1 and 1
-        ABTest_Proportions = -2
         Exit Function
     End If
     
@@ -41,12 +42,7 @@ Function ABTest_Proportions(n1, y1, n2, y2 As Long, Optional confidence As Doubl
         End If
         
     Else
-        'Proportion difference can be between -1 and 1
-        ABTest_Proportions = -2
         Exit Function
-
     End If
-    
-    ABTest_Proportions = -2
     
 End Function
